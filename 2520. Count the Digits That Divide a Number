@@ -1,0 +1,22 @@
+class Solution {
+public:
+    int countDigits(int n) {
+
+      
+	// Write your code here.	
+	
+	int temp=n,count=0,d;
+	while(temp != 0)
+	{
+d=temp%10;
+temp=temp/10;
+if(d>0 && n%d==0)
+{
+	count++;
+}
+	}
+	return count;
+}
+
+   
+};
